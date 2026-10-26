@@ -1,0 +1,43 @@
+# ---------- Secrets (never commit) ----------
+.env
+.env.*
+!.env.example
+# Put real passwords/secrets here instead of application.properties
+backend/src/main/resources/application-local.properties
+*.pem
+*.key
+
+# ---------- Backend (Java / Maven) ----------
+backend/target/
+*.class
+*.log
+*.jar
+*.war
+hs_err_pid*
+
+# ---------- Frontend (Angular / Node) ----------
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.sass-cache/
+frontend/coverage/
+frontend/npm-debug.log*
+frontend/yarn-error.log
+
+# ---------- IDEs ----------
+.idea/
+*.iml
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+.factorypath
+*.swp
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
